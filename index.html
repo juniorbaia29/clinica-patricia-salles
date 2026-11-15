@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Patrícia Salles - Seu Sorriso em Boas Mãos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Clínica <span>Patrícia Salles</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Tratamentos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#agendamento" class="btn-nav">Agendar Consulta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>Cuidando do seu sorriso com tecnologia e carinho</h2>
+            <p>Atendimento humanizado, equipamentos modernos e especialistas prontos para transformar a sua saúde bucal.</p>
+            <a href="#agendamento" class="btn-primary">Agendar Avaliação Gratuita</a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Tratamentos</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Limpeza e Prevenção</h3>
+                    <p>Remoção de tártaro, profilaxia completa e orientação para manter seus dentes sempre saudáveis.</p>
+                </div>
+                <div class="card">
+                    <h3>Clareamento Dental</h3>
+                    <p>Técnicas seguras a laser ou caseiras para deixar seu sorriso mais branco e iluminado.</p>
+                </div>
+                <div class="card">
+                    <h3>Implantes Dentários</h3>
+                    <p>Recupere a função mastigatória e a estética do seu sorriso com implantes de alta durabilidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Ortodontia</h3>
+                    <p>Aparelhos convencionais e alinhadores invisíveis para alinhar seus dentes com conforto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Por que escolher a Clínica Patrícia Salles?</h2>
+            <p>Profissionais com mais de 20 anos de experiência, formadas pela Universidade de Harvard. Nosso ambiente foi projetado para oferecer tranquilidade e segurança desde a recepção até o consultório.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Agendamento -->
+    <section id="agendamento" class="booking">
+        <div class="container">
+            <h2 class="section-title">Agende sua Consulta</h2>
+            <form id="form-agendamento">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp:</label>
+                    <input type="tel" id="telefone" required placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Tratamento Desejado:</label>
+                    <select id="servico" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Avaliação Geral">Avaliação Geral</option>
+                        <option value="Limpeza">Limpeza e Prevenção</option>
+                        <option value="Clareamento">Clareamento Dental</option>
+                        <option value="Implante">Implantes Dentários</option>
+                        <option value="Ortodontia">Ortodontia / Aparelho</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="data">Data Preferencial:</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horario">Período:</label>
+                        <select id="horario" required>
+                            <option value="Manhã">Manhã (08h às 12h)</option>
+                            <option value="Tarde">Tarde (14h às 18h)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary btn-full">Confirmar Agendamento</button>
+            </form>
+            <div id="mensagem-confirmacao" class="hidden"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Clínica Patrícia Salles - CRO 00000. Todos os direitos reservados.</p>
+            <p>Rua Exemplo, 123 - Centro | Telefone: (11) 96393-5264</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
